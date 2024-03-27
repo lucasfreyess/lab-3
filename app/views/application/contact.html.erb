@@ -1,0 +1,68 @@
+<div style="text-align:center; font-family:cursive;"> 
+    
+    <h1 style="color:magenta;">
+        i am the contact page!!
+    </h1>
+
+    <h2>
+        please submit your info so i can contact you!
+    </h2><br>
+
+    <form>
+        <div class="mb-3">
+
+            <label class="form-label">
+                Name
+            </label>
+            <input class="form-control">
+        </div>
+
+        <div class="mb-3">
+
+            <label for="exampleInputEmail" class="form-label">
+                Email
+            </label>
+            <input type="email" class="form-control" aria-describedby="emailHelp">
+            
+            <div class="form-text">
+                i'll never share your email with anyone else!! pinky promise!!
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">
+                Message
+            </label>
+            <input class="form-control">
+        </div>
+
+        <button id="boton" class="btn btn-primary btn-lg" type="button" onclick="">
+            Submit
+        </button><br>
+    </form><br>
+
+    <div id="new_text">
+
+    </div>
+
+    <script>
+        var button_element = document.getElementById("boton");
+
+        button_element.addEventListener("click",
+            function(){
+                var new_text = document.getElementById("new_text");
+
+                var newElement = document.createElement('h1');
+                newElement.textContent = "Thank you for your message, we will contact you soon."
+                new_text.appendChild(newElement);
+            }
+        )
+
+        /*
+        function validateForm() {
+            var x = document.forms
+        }
+        */
+    </script>
+
+</div>
